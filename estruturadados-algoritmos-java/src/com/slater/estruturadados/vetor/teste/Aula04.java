@@ -2,7 +2,7 @@ package com.slater.estruturadados.vetor.teste;
 
 import com.slater.estruturadados.vetor.Vetor;
 
-public class Aula03 {
+public class Aula04 {
 
 	public static void main(String[] args) {
 
@@ -14,7 +14,8 @@ public class Aula03 {
 		vetor.adiciona("elemento 3");
 		
 		System.out.println(vetor.tamanho());
-
+		
+		System.out.println(vetor.toString());
 	}
 
 }
