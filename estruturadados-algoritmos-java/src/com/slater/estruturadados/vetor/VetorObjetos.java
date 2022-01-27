@@ -23,7 +23,6 @@ public class VetorObjetos {
 
 
 		public boolean adiciona(int posicao, Object elemento) {
-
 			this.aumentaCapacidade();
 			if (!(posicao >= 0 && posicao < tamanho)) {
 				throw new IllegalArgumentException("Posição inválida");
