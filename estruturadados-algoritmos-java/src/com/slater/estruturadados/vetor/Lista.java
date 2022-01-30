@@ -12,7 +12,7 @@ public class Lista<T> {
 	}
 	
 	public Lista(int capacidade, Class<T> tipoClasse) {
-		this.elementos = (T[]) Array.newInstance(tipoClasse, capacidade);
+		this.elementos = (T[]) Array.newInstance(tipoClasse, capacidade); 
 		this.tamanho = 0;
 	}
 
@@ -116,6 +116,22 @@ public class Lista<T> {
 	// Exercício 04
 	public T obtem(int posicao) {
 		return this.busca(posicao);
+	}
+	
+	// Exercício 05
+	
+	public void limpar() {
+		// opção 1
+		// this.elementos = (T[]) new Object[this.elementos.length];
+		
+		// opção 2
+		// this.tamanho = 0;
+		
+		// opção 3
+		for (int i = 0; i<this.tamanho;  i++) {
+			this.elementos[i] = null;
+		}
+		this.tamanho = 0;
 	}
 
 	@Override
